@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, Arial, sans-serif;
-  color: #111827;
-  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f5f6f8;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,4 +25,12 @@ body {
 button,
 input {
   font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
 }

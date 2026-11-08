@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 // @ts-expect-error CSS side-effect imports are handled by the bundler.
+
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

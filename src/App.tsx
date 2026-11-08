@@ -1,7 +1,17 @@
+import { Navigate, Route, Routes } from "react-router-dom";
 import Header from "./components/layout/Header";
 
-export default function App() {
+
+const App = () => {
   return (
-    <Header/>
-  )
-}
+    <div className="min-h-screen bg-[#f5f6f8]">
+      <Header />
+
+      <Routes>
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </div>
+  );
+};
+
+export default App;
