@@ -15,10 +15,17 @@ const Pagination = ({
     return null;
   }
 
-  const pages = Array.from(
-    { length: totalPages },
-    (_, index) => index + 1
-  );
+const startPage = Math.max(
+  1,
+  Math.min(currentPage - 2, totalPages - 4)
+);
+
+const endPage = Math.min(startPage + 4, totalPages);
+
+const pages = Array.from(
+  { length: endPage - startPage + 1 },
+  (_, index) => startPage + index
+);
 
   return (
     <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
